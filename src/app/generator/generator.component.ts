@@ -12,7 +12,7 @@ export class GeneratorComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  generateQr(name: string) {
-    this.http.get<{ qr: string }>('http://192.168.1.100:3000', { params: { name } }).subscribe(res => this.qr = res.qr)
+  generateQr(id: string, name: string) {
+    this.http.get<{ qr: string }>('http://192.168.1.100:3000', { params: { id, name } }).subscribe(res => this.qr = res.qr)
   }
 }

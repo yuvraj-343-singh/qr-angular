@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GeneratorComponent } from './generator/generator.component';
 import { ScannerComponent } from './scanner/scanner.component';
+import { ViewerComponent } from './viewer/viewer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GeneratorComponent,
-    ScannerComponent
+    ScannerComponent,
+    ViewerComponent
   ],
   imports: [
     BrowserModule,
