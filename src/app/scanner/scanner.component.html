@@ -1,0 +1,6 @@
+<button (click)="action.toggleCamera()" [disabled]="action.isLoading">{{action.isStart ? 'Stop' : 'Start'}}</button>
+&nbsp;
+<button routerLink="/">Generate</button>
+<p>{{result}}</p>
+<ngx-scanner-qrcode #action="scanner" (data)="output($event);"></ngx-scanner-qrcode>
+
